@@ -13,7 +13,7 @@ function displayImage()
             div.removeChild(div.childNodes[0]);
         div.appendChild(img);
         (i == max_i) ? i = 0: i++;
-        window.setTimeout("displayImage();", 2000);
+        window.setTimeout("displayImage();", 5000);
     };
     img.src = "img/banner/totoro/" + i + ".jpg";
 }
