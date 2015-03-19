@@ -16,15 +16,16 @@
     </script>
     <![endif]-->
     <script type="text/javascript" src="js/plusone.js"></script>
+    <script type="text/javascript" src="js/jquery_lazyload.min.js"></script>
   </head>
 
   <body>
     <div class="container">
       <div id="slides">
-        <img id="banner" src="img/banner/totoro/0.jpg" alt="" />
-        <img id="banner" src="img/banner/totoro/1.jpg" alt="" />
-        <img id="banner" src="img/banner/totoro/2.jpg" alt="" />
-        <img id="banner" src="img/banner/totoro/3.jpg" alt="" />
+        <img class="lazy" id="banner" src="img/banner/totoro/0.jpg" alt="" />
+        <img class="lazy" id="banner" src="img/banner/totoro/1.jpg" alt="" />
+        <img class="lazy" id="banner" src="img/banner/totoro/2.jpg" alt="" />
+        <img class="lazy" id="banner" src="img/banner/totoro/3.jpg" alt="" />
       </div>
       <div class="head">
         <div class="pic">
@@ -36,23 +37,23 @@
         <ul>
           <li>
           <a target="_blank" href="http://weibo.com/zuckonit" title="weibo">
-            <img src="img/nav/Weibo.png" alt="" />
+            <img class="lazy" src="img/nav/Weibo.png" alt="" />
           </a>
           </li>
           <li>
           <a target="_blank" href="https://github.com/Zuckonit" title="github">
-            <img src="img/nav/Github.png" alt="" />
+            <img class="lazy" src="img/nav/Github.png" alt="" />
           </a>
           </li>
           <li>
           <a target="_blank" href="https://www.facebook.com/Zuck0n1t" title="facebook">
-            <img src="img/nav/Facebook.png" alt="" />
+            <img class="lazy" src="img/nav/Facebook.png" alt="" />
           </a>
           </li>
           <li>
           <a target="_blank" href="https://plus.google.com/u/0/111312737570320393101"
             title="g+">
-            <img src="img/nav/G+.png" alt="" />
+            <img class="lazy" src="img/nav/G+.png" alt="" />
           </a>
           </li>
         </ul>
@@ -76,6 +77,10 @@
         }
       });
     });
+
+  $("img.lazy").lazyload({
+      effect : "fadeIn"
+  });
   </script>
   </body>
 
