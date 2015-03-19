@@ -6,6 +6,9 @@ body { background-image:url('../img/bg.jpg'); }
 /*.head span {padding-left:6px; font-family: 'Iceberg', cursive; font-size:30px; color:orange;}*/
 .head {text-align:center; padding-top:1%; text-align:center;}
 .nav { clear:both; text-align:center; padding-top:4%; }
+.nav li a{
+  text-decoration:none;
+}
 .nav ul { margin: 0 auto; padding: 0; }
 .nav ul li { display: inline; list-style-type:none; }
 .nav ul li img {
