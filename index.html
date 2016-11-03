@@ -7,10 +7,8 @@
     <title>
       When I'm gone
     </title>
-    <link rel="stylesheet" href="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/css/style.css" />
-    <link rel="stylesheet" href="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/css/font.css" />
     <!--[if lt IE 9]>
-      <script src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/js/html5shiv.min.js"></script>
+    <script src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/js/html5shiv.min.js"></script>
     <![endif]-->
 
     <style type="text/css">
@@ -29,37 +27,37 @@
       .nav ul { margin: 0 auto; padding: 0; }
       .nav ul li { display: inline; list-style-type:none; }
       .nav ul li img {
-          border:0px;
-          box-shadow: inset 0 -1px 0 #3333sf;/*设置图像阴影效果*/
-          -webkit-box-shadow: inset 0 -1px 0 #3333sf;
-          -webkit-transition: 0.4s;
-          -webkit-transition: -webkit-transform 0.4s ease-out;
-          transition: transform 0.4s ease-out;/*变化时间设置为0.4秒(变化动作即为下面的图像旋转360读）*/
-          -moz-transition: -moz-transform 0.4s ease-out;
+        border:0px;
+        box-shadow: inset 0 -1px 0 #3333sf;/*设置图像阴影效果*/
+        -webkit-box-shadow: inset 0 -1px 0 #3333sf;
+        -webkit-transition: 0.4s;
+        -webkit-transition: -webkit-transform 0.4s ease-out;
+        transition: transform 0.4s ease-out;/*变化时间设置为0.4秒(变化动作即为下面的图像旋转360读）*/
+        -moz-transition: -moz-transform 0.4s ease-out;
       }
 
       .nav ul li img:hover{/*设置鼠标悬浮在头像时的CSS样式*/
-          transform: rotateZ(180deg);/*图像旋转180度*/
-          -webkit-transform: rotateZ(180deg);
-          -moz-transform: rotateZ(180deg);
+        transform: rotateZ(180deg);/*图像旋转180度*/
+        -webkit-transform: rotateZ(180deg);
+        -moz-transform: rotateZ(180deg);
       }
       .head img  {
-          border:0px;
-          -webkit-animation-fill-mode: both;
-          -moz-animation-fill-mode: both;
-          -ms-animation-fill-mode: both;
-          -o-animation-fill-mode: both;
-          animation-fill-mode: both;
-          -webkit-animation-duration: 0s;
-          -moz-animation-duration: 0s;
-          -ms-animation-duration: 0s;
-          -o-animation-duration: 0s;
-          animation-duration: 0s;
-          -webkit-animation-duration: 0.7s;
-          -moz-animation-duration: 0.7s;
-          -ms-animation-duration: 0.7s;
-          -o-animation-duration: 0.7s;
-          animation-duration: 0.7s;
+        border:0px;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -ms-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0s;
+        -moz-animation-duration: 0s;
+        -ms-animation-duration: 0s;
+        -o-animation-duration: 0s;
+        animation-duration: 0s;
+        -webkit-animation-duration: 0.7s;
+        -moz-animation-duration: 0.7s;
+        -ms-animation-duration: 0.7s;
+        -o-animation-duration: 0.7s;
+        animation-duration: 0.7s;
       }
       @-webkit-keyframes wobble {
         0% { -webkit-transform: translateX(0%); }
@@ -99,13 +97,21 @@
       }
       .head img:hover {
         -webkit-animation-name: wobble;
-          -moz-animation-name: wobble;
-          -o-animation-name: wobble;
-          animation-name: wobble;
+        -moz-animation-name: wobble;
+        -o-animation-name: wobble;
+        animation-name: wobble;
       }
 
-      .footer {clear:left; text-align:center; font-family: 'Iceberg', cursive; font-size:14px; padding-top:2%;}
+      .footer {clear:left; text-align:center; font-family: 'Iceberg', cursive;
+      font-size:14px; padding-top:2%; padding-bottom:2% }
 
+      @font-face {
+        font-family: 'Iceberg';
+        font-style: normal;
+        font-weight: 400;
+        src: local('Iceberg'), local('Iceberg-Regular'), url(https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/fonts/E4KdVKLAReJazSqpq1EAKg.woff2) format('woff2');
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+      }
     </style>
   </head>
 
@@ -126,54 +132,58 @@
       <div class="nav">
         <ul>
           <li>
-          <a target="_blank" href="http://weibo.com" title="weibo">
-            <img class="lazy" src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/imgs/icon/Weibo.png" alt="" />
-          </a>
+            <a target="_blank" href="http://weibo.com" title="weibo">
+              <img class="lazy" src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/imgs/icon/Weibo.png" alt="" />
+            </a>
           </li>
           <li>
-          <a target="_blank" href="https://github.com/Zuckonit" title="github">
-            <img class="lazy" src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/imgs/icon/Github.png" alt="" />
-          </a>
+            <a target="_blank" href="https://github.com/Zuckonit" title="github">
+              <img class="lazy" src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/imgs/icon/Github.png" alt="" />
+            </a>
           </li>
           <li>
-          <a target="_blank" href="https://www.facebook.com/Zuck0n1t" title="facebook">
-            <img class="lazy" src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/imgs/icon/Facebook.png" alt="" />
-          </a>
+            <a target="_blank" href="https://www.facebook.com/Zuck0n1t" title="facebook">
+              <img class="lazy" src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/imgs/icon/Facebook.png" alt="" />
+            </a>
           </li>
           <li>
-          <a target="_blank" href="https://plus.google.com/u/0/111312737570320393101"
-            title="g+">
-            <img class="lazy" src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/imgs/icon/G%252B.png" alt="" />
-          </a>
+            <a target="_blank" href="https://plus.google.com/u/0/111312737570320393101"
+              title="g+">
+              <img class="lazy" src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/imgs/icon/G%252B.png" alt="" />
+            </a>
           </li>
         </ul>
       </div>
       <div class="footer">
-        ©copyright 2013-2015. Proudly powered by @Mocker
+        ©copyright 2013-<em id="thisyear"></em>. Proudly powered by @Mocker
       </div>
     </div>
 
 
-  <script src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/js/jquery-1.9.1.min.js"></script>
-  <script src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/js/jquery.slides.min.js"></script>
-  <script type="text/javascript" src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/js/plusone.js"></script>
-  <script type="text/javascript" src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/js/jquery_lazyload.min.js"></script>
-  <script>
-    $(function() {
-      $('#slides').slidesjs({
-        play: {
-          active: true,
-          auto: true,
-          interval: 4000,
-          swap: true
-        }
+    <script src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/js/jquery-1.9.1.min.js"></script>
+    <script src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/js/jquery.slides.min.js"></script>
+    <script type="text/javascript" src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/js/plusone.js"></script>
+    <script type="text/javascript" src="https://coding.net/u/v4ex/p/cdn/git/raw/master/zuckonit/js/jquery_lazyload.min.js"></script>
+    <script>
+      $(function() {
+        $('#slides').slidesjs({
+          play: {
+            active: true,
+            auto: true,
+            interval: 4000,
+            swap: true
+          }
+        });
       });
-    });
 
-  $("img.lazy").lazyload({
-      effect : "fadeIn"
-  });
-  </script>
+      $("img.lazy").lazyload({
+        effect : "fadeIn"
+      });
+
+      var d = new Date();
+      var year = d.getFullYear();
+      $('#thisyear').text(year)
+    </script>
   </body>
 
 </html>
