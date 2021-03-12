@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>xubuntu12.04 折腾记 - When I gone</title>	
+	<meta name="author" content="Mocker">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	
+	
+	
+	<link href="./" type="application/atom+xml" rel="alternate" title="When I gone ATOM Feed" />
+	
+</head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href=".">When I gone</a></h1>
+		</div>
+	</header>
+	
+	
+<div role="main" class="content clearfix">	
+	<article>
+		<div class="post wrapper">
+			<h1>xubuntu12.04 折腾记</h1>
+			<h2>折腾来由</h2>
+<p>本人持有y450，俗称小y。y恰好是姓氏到第一个字母。当然，这跟我当初为什么买小y没有一毛钱到关系。<br />
+电脑上一直装到ubuntu10.04，暑假回家到时候，心血来潮地折腾了下xfce4，其简单性，轻量性是我放弃gnome2催化剂。一不做，二不休，这次直接换装xubuntu了。选择了最新的12.04版本，不要误会，本人完全没有最新情结。<br />
+</p>
+<hr />
+<h2>安装</h2>
+<p>硬盘安装比较麻烦，手头又没有光盘，借了个U盘，挂载了xubuntu。usb启动，安装........<br />
+由于以前，我把home目录单独挂载了一个分区，因此此次重装系统，不会影响到我到主目录，连备份都省了<br />
+</p>
+<hr />
+<h2>开始折腾</h2>
+<p>安装好了后，界面很清新，有一些细节需要自己动手配置下<br />
+</p>
+<h3>桌面图标字体背景不透明</h3>
+<p>在主目录下新建.gtk-2.0.rc文件<br />
+<code>vim ~/.gtk-2.0.rc</code><br />
+写入一下内容<br />
+</p>
+<div class="codehilite"><pre>    <span class="n">style</span> &quot;<span class="n">xfdesktop</span><span class="o">-</span><span class="n">icon</span><span class="o">-</span><span class="n">view</span>&quot; <span class="p">{</span>  
+    <span class="n">font_name</span> <span class="p">=</span> &quot;<span class="n">sans</span> <span class="n">Bold</span>&quot;         #字体名称设置  
+    <span class="n">XfdesktopIconView</span><span class="p">::</span><span class="n">label</span><span class="o">-</span><span class="n">alpha</span> <span class="p">=</span> 10 #透明度设置  
+    <span class="n">base</span><span class="p">[</span><span class="n">NORMAL</span><span class="p">]</span> <span class="p">=</span> &quot;#000000&quot;        #背景颜色<span class="p">(</span>下同<span class="p">)</span>  
+    <span class="n">base</span><span class="p">[</span><span class="n">SELECTED</span><span class="p">]</span> <span class="p">=</span> &quot;#71<span class="n">B9FF</span>&quot;  
+    <span class="n">base</span><span class="p">[</span><span class="n">ACTIVE</span><span class="p">]</span> <span class="p">=</span> &quot;#71<span class="n">FFAD</span>&quot;  
+    <span class="n">fg</span><span class="p">[</span><span class="n">NORMAL</span><span class="p">]</span> <span class="p">=</span> &quot;#<span class="n">ffffff</span>&quot;          #文字颜色<span class="p">(</span>下同<span class="p">)</span>  
+    <span class="n">fg</span><span class="p">[</span><span class="n">SELECTED</span><span class="p">]</span> <span class="p">=</span> &quot;#71<span class="n">B9FF</span>&quot;  
+    <span class="n">fg</span><span class="p">[</span><span class="n">ACTIVE</span><span class="p">]</span> <span class="p">=</span> &quot;#71<span class="n">FFAD</span>&quot; <span class="p">}</span>  
+    <span class="n">widget_class</span> &quot;<span class="o">*</span><span class="n">XfdesktopIconView</span><span class="o">*</span>&quot; <span class="n">style</span> &quot;<span class="n">xfdesktop</span><span class="o">-</span><span class="n">icon</span><span class="o">-</span><span class="n">view</span>&quot;  
+</pre></div>
+
+
+<h3>更新源</h3>
+<p>新德立软件中心，选最佳服务器即可<br />
+由于是12.04,版本比较新，网上提到源到博客比较少。没必要手动写入<br />
+然后sudo apt-get update &amp;&amp; sudo apt-get upgrade</p>
+<h3>vim</h3>
+<p>sudo apt-get install vim后，发现不能共享系统剪切板。google后才知道是xterm-clipboard没有被编译进来。<br />
+难道要我自己编译？算了吧，直接sudo apt-get install vim-gtk.毕竟不是pcman，问题又来了,包到依赖怎么也弄不好<br />
+我都懒得说这心酸到过程了。。。。<br />
+直接说解决方法吧:<br />
+</p>
+<div class="codehilite"><pre>    <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">autoremove</span> <span class="n">vim</span><span class="o">-</span><span class="n">common</span>
+    <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">install</span> <span class="n">vim</span><span class="o">-</span><span class="n">gtk</span>
+</pre></div>
+
+
+<p>搞定！！！</p>
+<h3>.显卡</h3>
+<p>开源的nvidia显卡可以让你电脑温度暴高，转速暴快<br />
+去官网下载一个最新的闭源显卡驱动<br />
+关掉x server:<br />
+xfce4 没有gdm<br />
+    sudo service lightdm stop <br />
+然后Alt+F1 找到驱动所在目录,sudo sh ./xxxxx.run<br />
+最后生成下配置文件:sudo nvidia-xconfig<br />
+重启xserver：sudo service lightdm start</p>
+<h3>.thunar启动慢</h3>
+<div class="codehilite"><pre>    <span class="n">sudo</span> <span class="n">vim</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">gvfs</span><span class="o">/</span><span class="n">mounts</span><span class="o">/</span><span class="n">network</span><span class="p">.</span><span class="n">mount</span>  
+    更改<span class="n">AutoMount</span><span class="p">=</span><span class="n">false</span>  
+</pre></div>
+
+
+<h3>.无线网</h3>
+<p>重启，F2进BIOS,F9恢复默认设置，F10保存并重启 <br />
+<code>sudo ifconfig wlan0 up</code></p>
+<h3>.小插件</h3>
+<p><code>sudo apt-get install xfce4-goodies</code>
+全部装了吧，不差那点内存<br />
+</p>
+<hr />
+<p>看到如此凌乱到博客，你大概知道我有多折腾了。。。。<br />
+</p>
+			
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-lang="en" data-size="large" data-related="">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						
+			
+			<div class="comments">
+			<h2>Comments !</h2>
+			    <div id="disqus_thread"></div>
+			    <script type="text/javascript">
+			       var disqus_identifier = "xubuntu12.04-laptop.html";
+			       (function() {
+			       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			       dsq.src = 'http://binlife.disqus.com/embed.js';
+			       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			      })();
+			    </script>
+			</div>
+						
+		</div>
+	
+	<div class="meta wrapper">
+	<time datetime="2012-08-28T22:51:00" pubdate> 8月 28 2012</time>
+	<ul class="tag clearfix">
+		<li><a href="./category/misc.html">misc</a></li>
+
+	
+		<li><a href="./tag/xubuntu12.04 y450.html">xubuntu12.04 y450</a></li>
+	
+
+	</ul>
+	
+</div>
+	</article>	
+</div>
+
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+		
+			<li><a href="./archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+			
+		</ul>
+	
+		<p role="contentinfo">© 2012 Mocker<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount',''],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
+</html>

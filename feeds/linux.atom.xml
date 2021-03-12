@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>When I gone</title><link href="zuckonit.github.com/" rel="alternate"></link><link href="zuckonit.github.com/feeds/linux.atom.xml" rel="self"></link><id>zuckonit.github.com/</id><updated>2012-08-29T22:26:00+08:00</updated><entry><title>定制个人linux</title><link href="zuckonit.github.com/linux_custom.html" rel="alternate"></link><updated>2012-08-29T22:26:00+08:00</updated><author><name>Mocker</name></author><id>tag:zuckonit.github.com,2012-08-29:linux_custom.html</id><summary type="html">&lt;p&gt;不知道你有没有这样的苦恼，每次重装linux系统的时候，又要把以前的&lt;br /&gt;
+软件重装一遍。又是换源，又是更新。各种蛋疼。说到这里，你大概猜到这篇&lt;br /&gt;
+博客专门用来治疗这种蛋疼到。好了,不说废话了，直接看下面方法。&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1&gt;安装Remastersys(以Ubuntu为例)&lt;/h1&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;echo&lt;/span&gt; &amp;quot;&lt;span class="n"&gt;deb&lt;/span&gt; &lt;span class="n"&gt;http&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="o"&gt;//&lt;/span&gt;&lt;span class="n"&gt;www&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;geekconnection&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;org&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;remastersys&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;repository&lt;/span&gt; &lt;span class="n"&gt;karmic&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&amp;quot; &lt;span class="o"&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;etc&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;sources&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;list&lt;/span&gt;  
+    &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;update&lt;/span&gt; &lt;span class="o"&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;upgrade&lt;/span&gt;  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;hr /&gt;
+&lt;h1&gt;定制ISO&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;定制前最好把系统多余到软件包什么的都删了，需要到软件保留。&lt;/em&gt;&lt;br /&gt;
+直接看截图吧：&lt;br /&gt;
+&lt;img alt="打开Remastersys" src="./images/linux/linux_custom/open.png" /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt="选择" src="./images/linux/linux_custom/choose.png" /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;img alt="确定" src="./images/linux/linux_custom/sure.png" /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;最后生成到iso文件在/home/remastersys/remastersys 里面&lt;br /&gt;
+拷贝出来后，可清理。&lt;br /&gt;
+&lt;img alt="清理" src="./images/linux/linux_custom/clean.png" /&gt;&lt;br /&gt;
+&lt;/p&gt;</summary><category term="linux"></category><category term="定制"></category></entry></feed>

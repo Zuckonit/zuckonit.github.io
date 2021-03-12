@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>When I gone</title><link href="zuckonit.github.com/" rel="alternate"></link><link href="zuckonit.github.com/feeds/misc.atom.xml" rel="self"></link><id>zuckonit.github.com/</id><updated>2012-11-11T00:00:00+08:00</updated><entry><title>1111111111</title><link href="zuckonit.github.com/1111111111.html" rel="alternate"></link><updated>2012-11-11T00:00:00+08:00</updated><author><name>Mocker</name></author><id>tag:zuckonit.github.com,2012-11-11:1111111111.html</id><summary type="html">&lt;h2&gt;Single Day&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;wiki time &lt;a href="http://baike.baidu.com/view/23105.htm?fr=ala0_1_1"&gt;光棍节&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;oh, shit! 没了！&lt;/li&gt;
+&lt;li&gt;等等,别的，都在百度百科里。&lt;/li&gt;
+&lt;/ul&gt;</summary><category term="single"></category></entry><entry><title>awalys with me</title><link href="zuckonit.github.com/always_with-me.html" rel="alternate"></link><updated>2012-09-26T00:00:00+08:00</updated><author><name>Mocker</name></author><id>tag:zuckonit.github.com,2012-09-26:always_with-me.html</id><summary type="html">&lt;pre&gt;
+&lt;embed src="http://player.youku.com/player.php/sid/XMjQ4OTAzNTQ4/v.swf" quality="high" width="480" height="400" align="middle" allowScriptAccess="sameDomain" allowFullscreen="true" type="application/x-shockwave-flash"&gt;&lt;/embed&gt;
+&lt;/pre&gt;</summary><category term="music"></category><category term="宫崎骏"></category></entry><entry><title>++age</title><link href="zuckonit.github.com/birthday.html" rel="alternate"></link><updated>2012-09-24T00:00:00+08:00</updated><author><name>Mocker</name></author><id>tag:zuckonit.github.com,2012-09-24:birthday.html</id><summary type="html">&lt;h1&gt;Today is my birthday&lt;/h1&gt;
+&lt;h2&gt;&lt;code&gt;++age&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;人生的十字路口渐渐到来。人越大，责任越多，烦恼越多，需要考虑的事情也越来越多。&lt;br /&gt;
+需要有足够的勇气走下去，Eerything will be ok！！！&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;What's more , no more!!!&lt;/p&gt;</summary><category term="birthday"></category><category term="today"></category></entry><entry><title>See you lazymonkey</title><link href="zuckonit.github.com/see_you_monkey.html" rel="alternate"></link><updated>2012-08-30T10:52:00+08:00</updated><author><name>Mocker</name></author><id>tag:zuckonit.github.com,2012-08-30:see_you_monkey.html</id><summary type="html">&lt;h1&gt;See You Lazymonkey&lt;/h1&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img alt="Monkey" src="./images/misc/monkey/monkey.png" /&gt;&lt;/p&gt;</summary><category term="monkey"></category><category term="brother"></category></entry><entry><title>xubuntu12.04 折腾记</title><link href="zuckonit.github.com/xubuntu12.04-laptop.html" rel="alternate"></link><updated>2012-08-28T22:51:00+08:00</updated><author><name>Mocker</name></author><id>tag:zuckonit.github.com,2012-08-28:xubuntu12.04-laptop.html</id><summary type="html">&lt;h2&gt;折腾来由&lt;/h2&gt;
+&lt;p&gt;本人持有y450，俗称小y。y恰好是姓氏到第一个字母。当然，这跟我当初为什么买小y没有一毛钱到关系。&lt;br /&gt;
+电脑上一直装到ubuntu10.04，暑假回家到时候，心血来潮地折腾了下xfce4，其简单性，轻量性是我放弃gnome2催化剂。一不做，二不休，这次直接换装xubuntu了。选择了最新的12.04版本，不要误会，本人完全没有最新情结。&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;安装&lt;/h2&gt;
+&lt;p&gt;硬盘安装比较麻烦，手头又没有光盘，借了个U盘，挂载了xubuntu。usb启动，安装........&lt;br /&gt;
+由于以前，我把home目录单独挂载了一个分区，因此此次重装系统，不会影响到我到主目录，连备份都省了&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;开始折腾&lt;/h2&gt;
+&lt;p&gt;安装好了后，界面很清新，有一些细节需要自己动手配置下&lt;br /&gt;
+&lt;/p&gt;
+&lt;h3&gt;桌面图标字体背景不透明&lt;/h3&gt;
+&lt;p&gt;在主目录下新建.gtk-2.0.rc文件&lt;br /&gt;
+&lt;code&gt;vim ~/.gtk-2.0.rc&lt;/code&gt;&lt;br /&gt;
+写入一下内容&lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    &lt;span class="n"&gt;style&lt;/span&gt; &amp;quot;&lt;span class="n"&gt;xfdesktop&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;icon&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;view&lt;/span&gt;&amp;quot; &lt;span class="p"&gt;{&lt;/span&gt;  
+    &lt;span class="n"&gt;font_name&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &amp;quot;&lt;span class="n"&gt;sans&lt;/span&gt; &lt;span class="n"&gt;Bold&lt;/span&gt;&amp;quot;         #字体名称设置  
+    &lt;span class="n"&gt;XfdesktopIconView&lt;/span&gt;&lt;span class="p"&gt;::&lt;/span&gt;&lt;span class="n"&gt;label&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;alpha&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; 10 #透明度设置  
+    &lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;NORMAL&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &amp;quot;#000000&amp;quot;        #背景颜色&lt;span class="p"&gt;(&lt;/span&gt;下同&lt;span class="p"&gt;)&lt;/span&gt;  
+    &lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;SELECTED&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &amp;quot;#71&lt;span class="n"&gt;B9FF&lt;/span&gt;&amp;quot;  
+    &lt;span class="n"&gt;base&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;ACTIVE&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &amp;quot;#71&lt;span class="n"&gt;FFAD&lt;/span&gt;&amp;quot;  
+    &lt;span class="n"&gt;fg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;NORMAL&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &amp;quot;#&lt;span class="n"&gt;ffffff&lt;/span&gt;&amp;quot;          #文字颜色&lt;span class="p"&gt;(&lt;/span&gt;下同&lt;span class="p"&gt;)&lt;/span&gt;  
+    &lt;span class="n"&gt;fg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;SELECTED&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &amp;quot;#71&lt;span class="n"&gt;B9FF&lt;/span&gt;&amp;quot;  
+    &lt;span class="n"&gt;fg&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;ACTIVE&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &amp;quot;#71&lt;span class="n"&gt;FFAD&lt;/span&gt;&amp;quot; &lt;span class="p"&gt;}&lt;/span&gt;  
+    &lt;span class="n"&gt;widget_class&lt;/span&gt; &amp;quot;&lt;span class="o"&gt;*&lt;/span&gt;&lt;span class="n"&gt;XfdesktopIconView&lt;/span&gt;&lt;span class="o"&gt;*&lt;/span&gt;&amp;quot; &lt;span class="n"&gt;style&lt;/span&gt; &amp;quot;&lt;span class="n"&gt;xfdesktop&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;icon&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;view&lt;/span&gt;&amp;quot;  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;更新源&lt;/h3&gt;
+&lt;p&gt;新德立软件中心，选最佳服务器即可&lt;br /&gt;
+由于是12.04,版本比较新，网上提到源到博客比较少。没必要手动写入&lt;br /&gt;
+然后sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade&lt;/p&gt;
+&lt;h3&gt;vim&lt;/h3&gt;
+&lt;p&gt;sudo apt-get install vim后，发现不能共享系统剪切板。google后才知道是xterm-clipboard没有被编译进来。&lt;br /&gt;
+难道要我自己编译？算了吧，直接sudo apt-get install vim-gtk.毕竟不是pcman，问题又来了,包到依赖怎么也弄不好&lt;br /&gt;
+我都懒得说这心酸到过程了。。。。&lt;br /&gt;
+直接说解决方法吧:&lt;br /&gt;
+&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;autoremove&lt;/span&gt; &lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;common&lt;/span&gt;
+    &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;apt&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;get&lt;/span&gt; &lt;span class="n"&gt;install&lt;/span&gt; &lt;span class="n"&gt;vim&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;gtk&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;搞定！！！&lt;/p&gt;
+&lt;h3&gt;.显卡&lt;/h3&gt;
+&lt;p&gt;开源的nvidia显卡可以让你电脑温度暴高，转速暴快&lt;br /&gt;
+去官网下载一个最新的闭源显卡驱动&lt;br /&gt;
+关掉x server:&lt;br /&gt;
+xfce4 没有gdm&lt;br /&gt;
+    sudo service lightdm stop &lt;br /&gt;
+然后Alt+F1 找到驱动所在目录,sudo sh ./xxxxx.run&lt;br /&gt;
+最后生成下配置文件:sudo nvidia-xconfig&lt;br /&gt;
+重启xserver：sudo service lightdm start&lt;/p&gt;
+&lt;h3&gt;.thunar启动慢&lt;/h3&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;    &lt;span class="n"&gt;sudo&lt;/span&gt; &lt;span class="n"&gt;vim&lt;/span&gt; &lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;usr&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;share&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;gvfs&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;mounts&lt;/span&gt;&lt;span class="o"&gt;/&lt;/span&gt;&lt;span class="n"&gt;network&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="n"&gt;mount&lt;/span&gt;  
+    更改&lt;span class="n"&gt;AutoMount&lt;/span&gt;&lt;span class="p"&gt;=&lt;/span&gt;&lt;span class="n"&gt;false&lt;/span&gt;  
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;.无线网&lt;/h3&gt;
+&lt;p&gt;重启，F2进BIOS,F9恢复默认设置，F10保存并重启 &lt;br /&gt;
+&lt;code&gt;sudo ifconfig wlan0 up&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;.小插件&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;sudo apt-get install xfce4-goodies&lt;/code&gt;
+全部装了吧，不差那点内存&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;看到如此凌乱到博客，你大概知道我有多折腾了。。。。&lt;br /&gt;
+&lt;/p&gt;</summary><category term="xubuntu12.04 y450"></category></entry><entry><title>publish blog with github+markdown+pelican</title><link href="zuckonit.github.com/github_markdown_pelican.html" rel="alternate"></link><updated>2012-08-27T00:00:00+08:00</updated><author><name>Mocker</name></author><id>tag:zuckonit.github.com,2012-08-27:github_markdown_pelican.html</id><summary type="html">&lt;h1&gt;简单的介绍下这三个"工具"&lt;/h1&gt;
+&lt;hr /&gt;
+&lt;h2&gt;github page&lt;/h2&gt;
+&lt;p&gt;简单来说github page就是github的一个附件功能，用来搭建个人博客的功能。&lt;br /&gt;
+无限流量，免租服务器，还很geek！！&lt;br /&gt;
+&lt;a href="http://pages.github.com/"&gt;github page官网&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;github&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://hi.baidu.com/lsin30/item/cb13d148011e03f11281da6c"&gt;git 学习笔记&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;what is pelican&lt;/h2&gt;
+&lt;p&gt;pelican 类似jekyll，但是基于python的博客系统，用来搭建github page。&lt;br /&gt;
+由于我用的Ubuntu10.04，安装jekyll的话ruby版本是个问题，要重新编译。&lt;br /&gt;
+作为一个pythoner，果断投入pelican的怀抱&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;安装pelican&lt;/h2&gt;
+&lt;p&gt;由于国内GFW原因，还是下源码自己编译吧 &lt;br /&gt;
+&lt;a href="http://pypi.python.org/pypi/pelican/#downloads"&gt;下载地址&lt;/a&gt; &lt;br /&gt;
+&lt;a href="http://docs.getpelican.com/en/3.0/"&gt;pelican官方教程&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;markdown&lt;/h2&gt;
+&lt;p&gt;markdown 这个就不解释了，自己看教程吧&lt;br /&gt;
+&lt;a href="http://qingbo.net/picky/502-markdown-syntax.html"&gt;markdown 语法&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://www.ituring.com.cn/article/details/775"&gt;图灵社区markdown教程&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h1&gt;最后附上详细教程一篇&lt;/h1&gt;
+&lt;p&gt;&lt;a href="http://x-wei.github.com/pelican_github_blog.html"&gt;初步实现&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://x-wei.github.com/tag/pelican.html"&gt;实用功能&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;</summary><category term="github"></category><category term="markdown"></category><category term="pelican"></category></entry></feed>

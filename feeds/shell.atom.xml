@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>When I gone</title><link href="zuckonit.github.com/" rel="alternate"></link><link href="zuckonit.github.com/feeds/shell.atom.xml" rel="self"></link><id>zuckonit.github.com/</id><updated>2012-09-25T00:00:00+08:00</updated><entry><title>whether your QQ is online</title><link href="zuckonit.github.com/are_you_online.html" rel="alternate"></link><updated>2012-09-25T00:00:00+08:00</updated><author><name>Mocker</name></author><id>tag:zuckonit.github.com,2012-09-25:are_you_online.html</id><summary type="html">&lt;hr /&gt;
+&lt;h2&gt;Why I write such script&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;this is for conky&lt;/li&gt;
+&lt;li&gt;this is for my furture gf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Code&lt;/h2&gt;
+&lt;table class="codehilitetable"&gt;&lt;tr&gt;&lt;td class="linenos"&gt;&lt;div class="linenodiv"&gt;&lt;pre&gt; 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28&lt;/pre&gt;&lt;/div&gt;&lt;/td&gt;&lt;td class="code"&gt;&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="c"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="c"&gt;#=============================================================================&lt;/span&gt;
+&lt;span class="c"&gt;#     FileName: qqonline.sh&lt;/span&gt;
+&lt;span class="c"&gt;#         Desc: judge whether the qq is online or not&lt;/span&gt;
+&lt;span class="c"&gt;#       Author: Mocker&lt;/span&gt;
+&lt;span class="c"&gt;#        Email: Zuckerwooo@gmail.com&lt;/span&gt;
+&lt;span class="c"&gt;#     HomePage: zuckonit.github.com&lt;/span&gt;
+&lt;span class="c"&gt;#      Version: 0.0.1&lt;/span&gt;
+&lt;span class="c"&gt;#   LastChange: 2012-09-25 15:14:33&lt;/span&gt;
+&lt;span class="c"&gt;#      History:&lt;/span&gt;
+&lt;span class="c"&gt;#=============================================================================&lt;/span&gt;
+
+&lt;span class="nv"&gt;url&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;http://wpa.qq.com/pa?p=1:$1:1&amp;quot;&lt;/span&gt;
+&lt;span class="nv"&gt;size&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="sb"&gt;`&lt;/span&gt;curl -I &lt;span class="nv"&gt;$url&lt;/span&gt; | grep Content-Length | awk -F&lt;span class="s1"&gt;&amp;#39;:&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;{printf&amp;quot;%d&amp;quot;,$2}&amp;#39;&lt;/span&gt;&lt;span class="sb"&gt;`&lt;/span&gt;
+
+&lt;span class="nv"&gt;file_online&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/tmp/qqonline
+&lt;span class="nv"&gt;file_offline&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/tmp/qqoffline
+
+&lt;span class="sb"&gt;`&lt;/span&gt;rm -f &lt;span class="nv"&gt;$file_online&lt;/span&gt; &amp;amp;&amp;gt;&amp;gt; /dev/null&lt;span class="sb"&gt;`&lt;/span&gt;
+&lt;span class="sb"&gt;`&lt;/span&gt;touch &lt;span class="nv"&gt;$file_offline&lt;/span&gt; &amp;amp;&amp;gt;&amp;gt; /dev/null&lt;span class="sb"&gt;`&lt;/span&gt;
+
+&lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$size&lt;/span&gt; -eq 2329 &lt;span class="o"&gt;]&lt;/span&gt;; &lt;span class="k"&gt;then&lt;/span&gt;
+    &lt;span class="sb"&gt;`&lt;/span&gt;mv &lt;span class="nv"&gt;$file_offline&lt;/span&gt; &lt;span class="nv"&gt;$file_online&lt;/span&gt; &amp;gt;&amp;gt; /dev/null&lt;span class="sb"&gt;`&lt;/span&gt;
+&lt;span class="k"&gt;elif&lt;/span&gt; &lt;span class="o"&gt;[&lt;/span&gt; &lt;span class="nv"&gt;$size&lt;/span&gt; -eq 2262 &lt;span class="o"&gt;]&lt;/span&gt;; &lt;span class="k"&gt;then&lt;/span&gt;
+    &lt;span class="sb"&gt;`&lt;/span&gt;mv &lt;span class="nv"&gt;$file_online&lt;/span&gt; &lt;span class="nv"&gt;$file_offline&lt;/span&gt; &amp;gt;&amp;gt; /dev/null&lt;span class="sb"&gt;`&lt;/span&gt;
+&lt;span class="k"&gt;fi&lt;/span&gt;
+
+&lt;span class="nb"&gt;exit &lt;/span&gt;0
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;hr /&gt;
+&lt;h2&gt;Why I not use python,but shell&lt;/h2&gt;
+&lt;p&gt;作为一个pythoner,想实现这个功能时，首先想到的是用python。但在使用coky的过程中，
+我发现conky在我设定的时间周期内调用python解释器，相比shell脚本消耗了更多的资源，
+反正会写shell脚本，当练练手了，果断有了这个shell版本.&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;h2&gt;Screenshot&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Screenshot" src="./images/shell/are_you_online/conky.png" /&gt;&lt;/p&gt;</summary><category term="shell"></category><category term="conky"></category></entry><entry><title>shell学习笔记</title><link href="zuckonit.github.com/shell_note.html" rel="alternate"></link><updated>2012-08-30T09:58:00+08:00</updated><author><name>Mocker</name></author><id>tag:zuckonit.github.com,2012-08-30:shell_note.html</id><summary type="html">&lt;h2&gt;Shell 笔记&lt;/h2&gt;
+&lt;p&gt;Where there is a shell , there is a way!!&lt;br /&gt;
+&lt;img alt="Cool" src="./images/shell/shell_note/longmao.png" /&gt;&lt;br /&gt;
+&lt;/p&gt;
+&lt;hr /&gt;</summary><category term="shell"></category><category term="note"></category></entry></feed>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>定制个人linux - When I gone</title>	
+	<meta name="author" content="Mocker">
+	
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0">
+	
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./theme/css/main.css" type="text/css" />
+		
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	
+	
+	
+	<link href="./" type="application/atom+xml" rel="alternate" title="When I gone ATOM Feed" />
+	
+</head>
+	
+<body>		
+	<header class="clearfix" role="banner">
+		<div class="wrapper">
+			<h1 class="huge"><a href=".">When I gone</a></h1>
+		</div>
+	</header>
+	
+	
+<div role="main" class="content clearfix">	
+	<article>
+		<div class="post wrapper">
+			<h1>定制个人linux</h1>
+			<p>不知道你有没有这样的苦恼，每次重装linux系统的时候，又要把以前的<br />
+软件重装一遍。又是换源，又是更新。各种蛋疼。说到这里，你大概猜到这篇<br />
+博客专门用来治疗这种蛋疼到。好了,不说废话了，直接看下面方法。<br />
+</p>
+<hr />
+<h1>安装Remastersys(以Ubuntu为例)</h1>
+<div class="codehilite"><pre>    <span class="n">sudo</span> <span class="n">echo</span> &quot;<span class="n">deb</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="p">.</span><span class="n">geekconnection</span><span class="p">.</span><span class="n">org</span><span class="o">/</span><span class="n">remastersys</span><span class="o">/</span><span class="n">repository</span> <span class="n">karmic</span><span class="o">/</span>&quot; <span class="o">&gt;&gt;</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">apt</span><span class="o">/</span><span class="n">sources</span><span class="p">.</span><span class="n">list</span>  
+    <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">update</span> <span class="o">&amp;&amp;</span> <span class="n">sudo</span> <span class="n">apt</span><span class="o">-</span><span class="n">get</span> <span class="n">upgrade</span>  
+</pre></div>
+
+
+<hr />
+<h1>定制ISO</h1>
+<p><em>定制前最好把系统多余到软件包什么的都删了，需要到软件保留。</em><br />
+直接看截图吧：<br />
+<img alt="打开Remastersys" src="static/images/linux/linux_custom/open.png" /><br />
+</p>
+<p><img alt="选择" src="static/images/linux/linux_custom/choose.png" /><br />
+</p>
+<p><img alt="确定" src="static/images/linux/linux_custom/sure.png" /><br />
+</p>
+<hr />
+<p>最后生成到iso文件在/home/remastersys/remastersys 里面<br />
+拷贝出来后，可清理。<br />
+<img alt="清理" src="static/images/linux/linux_custom/clean.png" /><br />
+</p>
+			
+			<a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-lang="en" data-size="large" data-related="">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+						
+			
+			<div class="comments">
+			<h2>Comments !</h2>
+			    <div id="disqus_thread"></div>
+			    <script type="text/javascript">
+			       var disqus_identifier = "linux_custom.html";
+			       (function() {
+			       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			       dsq.src = 'http://binlife.disqus.com/embed.js';
+			       (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			      })();
+			    </script>
+			</div>
+						
+		</div>
+	
+	<div class="meta wrapper">
+	<time datetime="2012-08-29T22:26:00" pubdate> 8月 29 2012</time>
+	<ul class="tag clearfix">
+		<li><a href="./category/linux.html">linux</a></li>
+
+	
+		<li><a href="./tag/linux.html">linux</a></li>
+	
+		<li><a href="./tag/定制.html">定制</a></li>
+	
+
+	</ul>
+	
+</div>
+	</article>	
+</div>
+
+	
+		
+<footer class="clearfix">
+	<div class="wrapper pages">
+		<ul class="nav">
+		
+			<li><a href="./archives.html">Archive</a></li>
+		</ul>
+	</div>
+	
+	<div class="copy wrapper">
+		<ul class="social">
+			
+		</ul>
+	
+		<p role="contentinfo">© 2012 Mocker<br>
+		Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">Pelican</a>.</p>
+	</div>
+</footer>
+	
+	<script>
+	  var _gaq=[['_setAccount',''],['_trackPageview']];
+	  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	  s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
+</body>
+</html>
